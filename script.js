@@ -8,7 +8,7 @@ var passwordLength = prompt("How long do you want your password to be?")
   var upperCaseOption = confirm( "Do you want uppercase characters?")
   console.log(upperCaseOption)
 
-  var lowerCaseOption = confirm( "Do you want lowercase characters?")
+  var lowerCaseOption = confirm( "Then you will have lowercase characters?")
   console.log(lowerCaseOption)
 
   if(upperCaseOption){
@@ -19,7 +19,7 @@ var passwordLength = prompt("How long do you want your password to be?")
    console.log( "Your password is lowercase!")
 
    const chars =" 123456789/*!@#$$%&*ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-   let passwordLength = length;
+   let passWordContext = length;
 
    const array = passwordLength
    window.crypto.getRandomValues(array)
@@ -28,11 +28,6 @@ var passwordLength = prompt("How long do you want your password to be?")
 
 
    }
-
-
-   
-}
-
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
