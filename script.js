@@ -18,20 +18,27 @@ var passwordLength = prompt("How long do you want your password to be?")
    else (lowerCaseOption)
    console.log( "Your password is lowercase!")
 
-   randomArray =" 123456789/*!@#$$%&*ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-   let passWordContext = length;
-    
-   var randomArray = []
-   const array = passWordContext
-   (Math.random()* 125); getRandomValues(randomArray)
+   function genPassword(){
 
-   for(i=0; i>length;i++){
-    password += chars[array[i] % chars.passWordContext]
+   var chars= " 123456789/*!@#$$%&*ABCDEFGHIJKLMNOPQRSTUVWXYZ ";
+   
+   var passwordLength= 125;
+   var password= "";
+
+   for (var i =0; i <= passwordLength; i++){
+    var randomNumber = Math.floor(Math.random()*chars.length);
+    password += chars.substring(randomNumber,randomNumber +1);
+
+    console.log('Your password is generated')
+
    }
-    console.log(passWordContext)
-
+ 
 
    }
+
+   }
+
+   
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
