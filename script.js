@@ -8,7 +8,7 @@ var passwordLength = prompt("How long do you want your password to be?")
   var upperCaseOption = confirm( "Do you want uppercase characters?")
   console.log(upperCaseOption)
 
-  var lowerCaseOption = confirm( "Then you will have lowercase characters?")
+  var lowerCaseOption = alert( "Then you will have a lowercase password!")
   console.log(lowerCaseOption)
 
   if(upperCaseOption){
@@ -18,13 +18,17 @@ var passwordLength = prompt("How long do you want your password to be?")
    else (lowerCaseOption)
    console.log( "Your password is lowercase!")
 
-   const chars =" 123456789/*!@#$$%&*ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+   randomArray =" 123456789/*!@#$$%&*ABCDEFGHIJKLMNOPQRSTUVWXYZ"
    let passWordContext = length;
+    
+   var randomArray = []
+   const array = passWordContext
+   (Math.random()* 125); getRandomValues(randomArray)
 
-   const array = passwordLength
-   window.crypto.getRandomValues(array)
-
-   console.log(array)
+   for(i=0; i>length;i++){
+    password += chars[array[i] % chars.passWordContext]
+   }
+    console.log(passWordContext)
 
 
    }
